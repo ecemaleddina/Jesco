@@ -5,8 +5,8 @@ let fourth = document.querySelector(".shop-btn");
 let img = document.querySelector(".slider-img");
 let smallBox = document.querySelector(".display-wrapper");
 let icon = document.querySelectorAll(".arrow-icon");
-let fluid = document.querySelector(".bg-change");
-const IntervalId = setInterval(timing1, 7000);
+let fluid = document.querySelector(".bg-changing");
+const IntervalId = setInterval(timing1, 5000);
 
 icon.forEach(a => {
     a.addEventListener("click", timing1);

@@ -1,3 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-btn {
+  color: #fff;
+  background-color: #fd5d67;
+  padding: 15px 20px;
+}
+
+.header-container {
+  padding: 30px 0;
+}
+
+.header-actions ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.header-action-btn {
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.sign-btn {
+  color: #fb5d5d;
+}
+
+.main-menu a {
+  color: #4c4c4c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 480px) {
+  .header-action-btn {
+    font-size: 18px;
+  }
+}
+.discount-container {
+  background-color: #242424;
+  color: #b5b5b5;
+  font-size: 14px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-case {
+  width: 100%;
+}
+
+.display-wrapper {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 25px;
+  width: 252px;
+  height: 136px;
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 21px;
+  color: #393939;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.shop-link {
+  font-size: 15px;
+  color: #FB5D5D;
+  text-decoration: underline;
+}
+
+.slider-image img {
+  width: 80%;
+}
+
+.slider-content {
+  margin-bottom: 50px;
+}
+
+.category {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  color: #3c3c3c;
+  margin-bottom: 15px;
+}
+
+.category::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1.5px;
+  background-color: #fb5d5d;
+  width: 30px;
+  height: 3px;
+}
+
+.title-1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+
+.title-2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+@media (min-width: 768px) {
+  .title-1,
+  .title-2 {
+    font-size: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .title-1,
+  .title-2 {
+    font-size: 60px;
+  }
+  .slider-image img {
+    width: 60%;
+  }
+}
+.banner-area {
+  padding: 100px 0;
+}
+
+.banner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-disc {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+}
+
+.midded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  margin-bottom: 14px;
+}
+
+.item-amount {
+  font-size: 16px;
+  color: #575656;
+}
+
+.feature {
+  padding: 25px;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #e8e8e8;
+}
+
+.feature-title {
+  font-size: 24px;
+}
+
+.sub-title {
+  font-size: 16px;
+  color: #848484;
+}
+
+.feature-icon {
+  padding: 20px;
+  background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  .feature-title {
+    font-size: 20px;
+  }
+  .sub-title {
+    font-size: 14px;
+  }
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fb5d5d;
+}
+
+.common-title {
+  position: relative;
+}
+
+.common-title::after {
+  content: "";
+  border: 1px solid #a7a7a7;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.product-link {
+  color: #a7a7a7;
+  font-size: 16px;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.product-link:hover {
+  color: #fb5d5d;
+}
+
+.product-link::after {
+  z-index: 10;
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: -11px;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.product-link:hover::after {
+  border: 1px solid #fb5d5d;
+  width: 100%;
+  height: 1px;
+}
+
+.active {
+  color: #fb5d5d;
+}
+
+.active::after {
+  border: 1px solid #fb5d5d;
+  width: 100%;
+  height: 1px;
 }/*# sourceMappingURL=main.css.map */

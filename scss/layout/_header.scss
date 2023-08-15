@@ -1,0 +1,31 @@
+.header-container{
+    padding: 30px 0;
+}
+
+.header-actions ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.header-action-btn{
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sign-btn{
+    color: #fb5d5d;
+}
+
+.main-menu a{
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media(min-width: 480px){
+    .header-action-btn{
+        font-size: 18px;
+    }
+}

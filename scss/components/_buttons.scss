@@ -2,4 +2,19 @@
     color: #fff;
     background-color: #fd5d67;
     padding: 15px 20px;
+    transition: all 0.4s;
+}
+
+.shop-btn:hover{
+    background-color: #fd5d67;
+    color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(153, 63, 107, 0.5);
+}
+
+.product-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
 }

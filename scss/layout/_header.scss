@@ -8,6 +8,10 @@
     gap: 1rem;
 }
 
+.header-actions li:hover a{
+    color: #fb5d5d;
+}
+
 .header-action-btn{
     color: #2c2c2c;
     font-weight: 600;
@@ -22,10 +26,15 @@
     color: #4c4c4c;
     font-size: 14px;
     font-weight: 600;
+    transition: all 0.4s;
 }
 
 @media(min-width: 480px){
     .header-action-btn{
         font-size: 18px;
     }
+}
+
+.dropdown:hover a{
+    color: #fb5d5d;
 }

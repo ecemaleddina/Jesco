@@ -1074,6 +1074,12 @@ ul {
   width: 100%;
 }
 
+.product-details-content-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .color-area {
   margin-bottom: 10px;
 }

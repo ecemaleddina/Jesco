@@ -25,6 +25,10 @@
 .product-details-area {
     padding: 50px 0;
 
+    img{
+        cursor: pointer;
+    }
+    
     .product-details-content {
         .content-header {
             font-size: 28px;

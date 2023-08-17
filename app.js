@@ -54,15 +54,34 @@ function addToCart() {
     })
 }
 
+function prodImg(){
+    const smallImgs = document.querySelectorAll('#small-img');
+    const bigImg = document.querySelector('#big-img');
+
+    smallImgs.forEach(x =>{
+        x.addEventListener('click', (e)=>{
+            bigImg.src = e.target.src;
+        })
+    })
+}
+
 function descArea(){
     const desc = document.querySelectorAll('.idr');
 
     desc.forEach(elem =>{
         elem.addEventListener('click', ()=>{
+            desc.forEach(elem=>{
+                if(elem.classList.contains('active')){
+                    elem.classList.remove('active');
+                    elem.lastElementChild.classList.remove('block')
+                }
+            })
             elem.classList.add('active');
+            elem.lastElementChild.classList.add('block');
         })
     })
 }
 
+prodImg();
 descArea();
 addToCart();

@@ -300,6 +300,9 @@
     padding: 20px;
     background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
         transition: all 0.4s;
@@ -385,10 +388,6 @@
         width: 120%;
         height: 1px;
     }
-}
-
-.checked {
-    color: #ffde00;
 }
 
 .rev-count {
@@ -496,87 +495,97 @@
 // Clock area end
 
 // Testimonials area start
-
-.testi-area{
+.testimonial-area{
     margin-bottom: 30px;
-    .testi{
-        position: relative;
-        padding: 60px 40px;
-        box-shadow: 0px 30px 64px 0px rgba(0, 0, 0, 0.05);
-    
-        .testi-stars{
-            display: flex;
-            gap: 0.6rem;
-            margin-bottom: 20px;
-        }
-    
-        .testi-text{
-            margin-bottom: 20px;
-            p{
-                font-size: 18px;
-                color: #818790;
+
+    .testi-swiper{
+        width: 100%;
+
+        .testi {
+            position: relative;
+            padding: 60px 40px;
+            box-shadow: 0px 30px 64px 0px rgba(0, 0, 0, 0.05);
+        
+            .testi-stars {
+                display: flex;
+                gap: 0.6rem;
+                margin-bottom: 20px;
             }
-        }
-    
-        .testi-author{
-            display: flex;
-    
-            .author-img{
-                position: relative;
-    
-                &::after{
-                    content: "\f10d";
-                    font-family: FontAwesome;
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
-                    position: absolute;
-                    top: -5px;
-                    right: -5px;
-                    height: 22px;
-                    width: 22px;
-                    background-color: #fb5d5d;
-                    border-radius: 50%;
-                }
-            }
-    
-            .author-info{
-                margin-left: 25px;
-    
-                .author-name{
-                    color: #39393a;
+        
+            .testi-text {
+                margin-bottom: 20px;
+        
+                p {
                     font-size: 18px;
-                    font-weight: 500;
-                }
-    
-                .author-title{
-                    color: #576477;
-                    font-size: 14px;
-                    font-weight: 300;
+                    color: #818790;
                 }
             }
-        }
-    
-        &::after{
-            content: "\f10d";
-            font-family: FontAwesome;
-            color: #f1f1f1;
-            font-size: 3.5rem;
-            position: absolute;
-            bottom: 0px;
-            right: 22px;
+        
+            .testi-author {
+                display: flex;
+        
+                .author-img {
+                    position: relative;
+        
+                    &::after {
+                        content: "\f10d";
+                        font-family: FontAwesome;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 10px;
+                        position: absolute;
+                        top: -5px;
+                        right: -5px;
+                        height: 22px;
+                        width: 22px;
+                        background-color: #fb5d5d;
+                        border-radius: 50%;
+                    }
+                }
+        
+                .author-info {
+                    margin-left: 25px;
+        
+                    .author-name {
+                        color: #39393a;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+        
+                    .author-title {
+                        color: #576477;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        
+            &::after {
+                content: "\f10d";
+                font-family: FontAwesome;
+                color: #f1f1f1;
+                font-size: 3.5rem;
+                position: absolute;
+                bottom: 0px;
+                right: 22px;
+            }
         }
     }
 }
+
 
 // Testimonials area end
 
 // Brand area start
 
-.brand-area{
+.brand-area {
     padding: 60px 0;
+
+    .brand-swiper{
+        width: 100%;
+    }
 }
 
 // Brand area end

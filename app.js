@@ -34,3 +34,35 @@ function timing1() {
     fluid.classList.toggle("bg-change");
     clearInterval(IntervalId);
 }
+
+
+function addToCart() {
+    const dec = document.querySelector('.dec');
+    const inc = document.querySelector('.inc');
+    const inp = document.querySelector('.num-box');
+
+    dec.addEventListener('click', () => {
+        const currentValue = parseInt(inp.value);
+        if (currentValue > 1) {
+            inp.value = currentValue - 1;
+        }
+    })
+
+    inc.addEventListener('click', () => {
+        const currentValue = parseInt(inp.value);
+        inp.value = currentValue + 1;
+    })
+}
+
+function descArea(){
+    const desc = document.querySelectorAll('.idr');
+
+    desc.forEach(elem =>{
+        elem.addEventListener('click', ()=>{
+            elem.classList.add('active');
+        })
+    })
+}
+
+descArea();
+addToCart();

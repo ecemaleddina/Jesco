@@ -1,0 +1,93 @@
+.footer-container {
+    color: #fff;
+    background-color: #333;
+
+    .footer-top {
+        padding: 50px 0;
+
+        .footer-part {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 30px;
+
+            .footer-text {
+                color: #afafaf;
+            }
+
+            .footer-socials {
+                display: flex;
+                gap: 1.2rem;
+
+                i {
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        background-color: #fb5d5d;
+                    }
+                }
+            }
+
+            .footer-heading {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .footer-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+
+                li {
+                    position: relative;
+                    padding-left: 12px;
+
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 6px;
+                        height: 1px;
+                        background-color: #afafaf;
+                        content: "";
+                        margin-top: -0.5px;
+                    }
+
+                    a {
+                        color: #afafaf;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: #fb5d5d;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+
+            .footer-img {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    .footer-bottom {
+        background-color: #393939;
+        padding: 20px 0;
+
+        p {
+            color: #d8d8d8;
+            font-size: 14px;
+
+            i {
+                color: #fb5d5d;
+            }
+        }
+    }
+}

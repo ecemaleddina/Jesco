@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./main.css">
     <title>Document</title>
 </head>
@@ -21,40 +22,118 @@
         <div class="header-container">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-auto">
-                        <a href="index.html"><img src="./photos/logo.webp" alt=""></a>
+                    <div class="col-6 col-lg-4">
+                        <a href="index.html"><img src="./photos/logo.webp" class="img-fluid"></a>
                     </div>
-                    <div class="col d-none d-lg-block">
+                    <div class="col-lg-4 d-none d-lg-block">
                         <div class="main-menu">
                             <ul class="d-flex justify-content-around">
                                 <li class="dropdown">
-                                    <a href="#" class="d-flex align-items-center gap-1">
+                                    <a href="#" class="d-flex align-items-center gap-1 drpdwn-text">
                                         HOME
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Home 1</a></li>
+                                        <li><a href="#">Home 2</a></li>
+                                    </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="d-flex align-items-center gap-1">
+                                    <a href="#" class="d-flex align-items-center gap-1 drpdwn-text">
                                         SHOP
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </a>
+                                    <ul class="mega-menu">
+                                        <li class="d-flex mega-top">
+                                            <ul class="d-flex flex-column gap-2">
+                                                <li class="drpdwn-title">Shop Page</li>
+                                                <li>Shop 3 Column</li>
+                                                <li>Shop 4 Column</li>
+                                                <li>Shop Left Sidebar</li>
+                                                <li>Shop Right Sidebar</li>
+                                                <li>Shop List Left Sidebar</li>
+                                                <li>Shop List Right Sidebar</li>
+                                            </ul>
+                                            <ul class="d-flex flex-column gap-2">
+                                                <li class="drpdwn-title">Product Details page</li>
+                                                <li>Product Single</li>
+                                                <li>Product Variable</li>
+                                                <li>Product Affiliate</li>
+                                                <li>Product Group</li>
+                                                <li>Product Tab 2</li>
+                                                <li>Product Tab 3</li>
+                                            </ul>
+                                            <ul class="d-flex flex-column gap-2">
+                                                <li class="drpdwn-title">Single Product Page</li>
+                                                <li>Product Slider</li>
+                                                <li>Product Gallery Left</li>
+                                                <li>Product Gallery Right</li>
+                                                <li>Product Sticky Left</li>
+                                                <li>Product Sticky Right</li>
+                                            </ul>
+                                            <ul class="d-flex flex-column gap-2">
+                                                <li class="drpdwn-title">Other Shop Pages</li>
+                                                <li>Cart Page</li>
+                                                <li>Checkout Page</li>
+                                                <li>Compare Page</li>
+                                                <li>Wishlist Page</li>
+                                                <li>Account Page</li>
+                                                <li>Login & Register Page</li>
+                                                <li>Empty Cart Page</li>
+                                            </ul>
+                                            <ul class="d-flex flex-column gap-2">
+                                                <li class="drpdwn-title">Pages</li>
+                                                <li>Page</li>
+                                                <li>Privacy Policy</li>
+                                                <li>Faq Page</li>
+                                                <li>Coming Soon Page</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-bottom">
+                                            <ul class="d-flex mega-banner">
+                                                <li class="mega-img">
+                                                    <a href="#">
+                                                        <img src="./photos/mega-1.webp" class="w-100">
+                                                    </a>
+                                                </li>
+                                                <li class="mega-img">
+                                                    <a href="#">
+                                                        <img src="./photos/mega-2.webp" class="w-100">
+                                                    </a>
+                                                </li>
+                                                <li class="mega-img">
+                                                    <a href="#">
+                                                        <img src="./photos/mega-3.webp" class="w-100">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="d-flex align-items-center gap-1">
+                                    <a href="#" class="d-flex align-items-center gap-1 drpdwn-text">
                                         BLOGS
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">BLOG GRID PAGE</a></li>
+                                        <li><a href="#">GRID LEFT SIDEBAR</a></li>
+                                        <li><a href="#">GRID RIGHT SIDEBAR</a></li>
+                                        <li><a href="#">BLOG SINGLE PAGE</a></li>
+                                        <li><a href="#">SINGLE LEFT SIDEBAR</a></li>
+                                        <li><a href="#">SINGLE RIGHT SIDBAR</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">ABOUT US</a>
+                                <li class="dropdown">
+                                    <a href="#" class="drpdwn-text">ABOUT US</a>
                                 </li>
-                                <li>
-                                    <a href="#">CONTACT US</a>
+                                <li class="dropdown">
+                                    <a href="#" class="drpdwn-text">CONTACT US</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col col-lg-auto">
+                    <div class="col-6 col-lg-4">
                         <div class="header-actions">
                             <ul>
                                 <li><a href="#" class="header-action-btn sign-btn">Sign In</a></li>
@@ -117,7 +196,7 @@
         <div class="banner-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div class="single-col">
                         <div class="banner">
                             <a href="#">
                                 <img src="./photos/bestseller1.webp" class="w-100">
@@ -128,18 +207,18 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="single-col center-col">
                         <div class="banner">
                             <a href="#">
                                 <img src="./photos/bestseller2.webp" class="w-100">
                                 <div class="midded">
-                                    <p class="title">#bestsellers</p>
-                                    <a href="#" class="shop-link">Shop Now</a>
+                                    <p class="midded-title">#bestsellers</p>
+                                    <a href="#" class="midded-link">Shop Now</a>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="single-col">
                         <div class="banner">
                             <a href="#">
                                 <img src="./photos/bestseller3.webp" class="w-100">
@@ -194,7 +273,7 @@
             </div>
         </div>
 
-        <div class="product-area">
+        <div class="product-area mb-4">
             <div class="container">
                 <div class="row common-title align-items-center">
                     <div class="col-12 col-md-6 mb-3">
@@ -212,7 +291,7 @@
             </div>
             <div class="container mt-3">
                 <div class="row">
-                    <div class="col-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
                         <div class="product">
                             <div class="product-image">
                                 <img class="w-100" src="./photos/coat.webp">
@@ -221,8 +300,211 @@
                                 </button>
                                 <div class="prod-popup">
                                     <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <i class="fa-solid fa-"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="rev-count">(5 Review)</span>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="prod-name">Women's Elizabeth Coat</a>
+                                    <p class="prod-price">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+                        <div class="product">
+                            <div class="product-image">
+                                <img class="w-100" src="./photos/coat.webp">
+                                <button class="product-btn shop-btn rounded-pill">
+                                    ADD TO CART
+                                </button>
+                                <div class="prod-popup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass popup"></i>
+                                    <i class="fa-solid fa-rotate popup"></i>
                                 </div>
                             </div>
                             <div class="product-content">
@@ -244,12 +526,512 @@
                 </div>
             </div>
         </div>
+
+        <div class="clock-area">
+            <div class="container">
+                <div class="row deal-bg">
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <p class="clock-title">#FASHION SHOP</p>
+                        <a href="#" class="btn shop-btn rounded-pill">
+                            SHOP NOW
+                            <i class="fa fa-shopping-basket"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./photos/woman.webp" class="clock-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-area mt-5">
+            <div class="container d-flex flex-column align-items-center gap-3">
+                <p class="section-title">#testimonials</p>
+                <div class="swiper testi-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class=" testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-1.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Daisy Morgan</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-2.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Reyna Chung</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-1.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Daisy Morgan</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-2.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Leah Chatman</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-3.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Reyna Chung</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-1.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Daisy Morgan</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-2.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Reyna Chung</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-1.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Daisy Morgan</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-2.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Leah Chatman</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi">
+                                <div class="testi-stars">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <div class="testi-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consect adipisici elit, sed do
+                                        eiusmod tempol incididunt ut
+                                        labore et dolore magna aliqua. Ut
+                                        enim ad minim veniamfhq nostrud
+                                        exercitation.
+                                    </p>
+                                </div>
+                                <div class="testi-author">
+                                    <div class="author-img">
+                                        <img src="./photos/testi-3.webp">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="author-name">Reyna Chung</p>
+                                        <p class="author-title">Happy Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="testi-area">
+                    <div class="row">
+                        <div class="testi col-12 col-md-6 col-xl-4">
+                            <div class="testi-stars">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consect adipisici elit, sed do
+                                    eiusmod tempol incididunt ut
+                                    labore et dolore magna aliqua. Ut
+                                    enim ad minim veniamfhq nostrud
+                                    exercitation.
+                                </p>
+                            </div>
+                            <div class="testi-author">
+                                <div class="author-img">
+                                    <img src="./photos/testi-1.webp">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Daisy Morgan</p>
+                                    <p class="author-title">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi col-12 col-md-6 col-xl-4">
+                            <div class="testi-stars">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consect adipisici elit, sed do
+                                    eiusmod tempol incididunt ut
+                                    labore et dolore magna aliqua. Ut
+                                    enim ad minim veniamfhq nostrud
+                                    exercitation.
+                                </p>
+                            </div>
+                            <div class="testi-author">
+                                <div class="author-img">
+                                    <img src="./photos/testi-1.webp">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Daisy Morgan</p>
+                                    <p class="author-title">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi col-12 col-md-6 col-xl-4">
+                            <div class="testi-stars">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consect adipisici elit, sed do
+                                    eiusmod tempol incididunt ut
+                                    labore et dolore magna aliqua. Ut
+                                    enim ad minim veniamfhq nostrud
+                                    exercitation.
+                                </p>
+                            </div>
+                            <div class="testi-author">
+                                <div class="author-img">
+                                    <img src="./photos/testi-1.webp">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Daisy Morgan</p>
+                                    <p class="author-title">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="brand-area">
+            <div class="container">
+                <div class="swiper brand-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-1.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-2.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-3.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-4.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-5.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-1.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-2.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-3.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-4.webp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./photos/brand-5.webp" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./photos/brand-1.webp" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./photos/brand-2.webp" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./photos/brand-3.webp" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./photos/brand-4.webp" class="img-fluid">
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
     </main>
 
     <footer>
-       
+
     </footer>
 
+    <a href="#top" class="scroll-up"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="custom-swiper.js"></script>
     <script src="app.js"></script>
 </body>
 

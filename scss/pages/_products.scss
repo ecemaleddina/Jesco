@@ -27,6 +27,11 @@
 
     img{
         cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover{
+            opacity: 0.5;
+        }
     }
     
     .product-details-content {

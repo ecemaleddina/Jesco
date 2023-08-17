@@ -1,0 +1,35 @@
+.color-area {
+    margin-bottom: 10px;
+    .circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        transition: all 0.4s;
+        &:hover{
+            border: 1px solid #fb5d5d;
+        }
+    }
+
+    .black {
+        background-color: #000;
+    }
+}
+
+.area-title {
+    font-size: 18px;
+    color: #525252;
+    font-weight: 600;
+    min-width: 70px;
+}
+
+.size-circles{
+    .circle{
+        background-color: #d6d6d6;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

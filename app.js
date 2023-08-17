@@ -73,11 +73,9 @@ function descArea(){
             desc.forEach(elem=>{
                 if(elem.classList.contains('active')){
                     elem.classList.remove('active');
-                    elem.lastElementChild.classList.remove('block')
                 }
             })
             elem.classList.add('active');
-            elem.lastElementChild.classList.add('block');
         })
     })
 }

@@ -1,6 +1,6 @@
-.header-container {
-    padding: 30px 0;
-}
+// .header-container {
+//     padding: 30px 0;
+// }
 
 .header-actions {
     ul {
@@ -9,9 +9,9 @@
         gap: 1rem;
     }
 
-    li{
-        &:hover{
-            a{
+    li {
+        &:hover {
+            a {
                 color: #fb5d5d;
             }
         }
@@ -41,6 +41,107 @@
     }
 }
 
-.dropdown:hover a {
-    color: #fb5d5d;
+.dropdown {
+    padding: 30px 0;
+
+    &:hover {
+        .drpdwn-text {
+            color: #fb5d5d;
+        }
+
+        .sub-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .mega-menu{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .sub-menu {
+        z-index: 10;
+        display: block;
+        background-color: #fff;
+        box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
+        width: 15vw;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s;
+
+        a {
+            min-width: max-content;
+            display: block;
+            font-size: 14px;
+            padding: 12px 25px;
+            transition: all 0.4s;
+            border-bottom: 1px solid #eee;
+
+            &:hover {
+                color: #fb5d5d;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .mega-menu {
+        z-index: 10;
+        box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        padding: 20px 30px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: translateX(-30%);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s;
+
+        .mega-top {
+            ul {
+                margin-right: 30px;
+
+                li {
+                    min-width: max-content;
+                    font-size: 14px;
+                    color: #1d1d1d;
+                    transition: all 0.4s;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #fb5d5d;
+                        margin-left: 10px;
+                    }
+                }
+
+                .drpdwn-title {
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: all 0.4s;
+                    padding-bottom: 5px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #ebebeb;
+
+                    &:hover {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .mega-bottom{
+            margin-top: 30px;
+            .mega-banner{
+                justify-content: space-between;
+
+                li{
+                    width: 30%;
+                }
+            }
+        }
+    }
 }

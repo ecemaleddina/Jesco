@@ -12,9 +12,18 @@
 }
 
 .product-btn {
+    font-size: 10px;
     position: absolute;
     left: 50%;
     bottom: 2%;
     transform: translate(-50%, 50%);
     opacity: 0;
+    width: max-content;
+
+    @media(min-width: 480px){
+        font-size: 12px;
+    }
+    @media(min-width: 1400px){
+        font-size: 16px;
+    }
 }

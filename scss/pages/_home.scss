@@ -342,7 +342,7 @@
 
     &::after {
         content: "";
-        border: 1px solid #a7a7a7;
+        border: 1px solid #ececec;
         width: 100%;
         height: 1px;
         position: absolute;
@@ -404,68 +404,6 @@
     }
 }
 
-.prod-price {
-    color: #1d1d1d;
-    font-weight: 600;
-}
-
-.product {
-    cursor: pointer;
-
-    &:hover {
-        .product-btn {
-            transform: translate(-50%, 0);
-            opacity: 1;
-        }
-
-        .popup {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .product-image img {
-            transform: scale(1.1);
-            rotate: 4deg;
-        }
-    }
-}
-
-.product-image {
-    position: relative;
-    overflow: hidden;
-
-    img {
-        transition: all 0.4s;
-    }
-}
-
-.prod-popup {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    overflow: hidden;
-
-    i {
-        font-size: 20px;
-        padding: 10px;
-        border-radius: 50%;
-        transition: all 0.3s;
-
-        &:hover {
-            color: #fff;
-            background-color: #fb5d5d;
-        }
-    }
-}
-
-.popup {
-    transform: translateY(250%);
-    transition: all 0.4s;
-    opacity: 0;
-}
-
 
 // Product area end
 
@@ -495,38 +433,38 @@
 // Clock area end
 
 // Testimonials area start
-.testimonial-area{
+.testimonial-area {
     margin-bottom: 30px;
 
-    .testi-swiper{
+    .testi-swiper {
         width: 100%;
 
         .testi {
             position: relative;
             padding: 60px 40px;
             box-shadow: 0px 30px 64px 0px rgba(0, 0, 0, 0.05);
-        
+
             .testi-stars {
                 display: flex;
                 gap: 0.6rem;
                 margin-bottom: 20px;
             }
-        
+
             .testi-text {
                 margin-bottom: 20px;
-        
+
                 p {
                     font-size: 18px;
                     color: #818790;
                 }
             }
-        
+
             .testi-author {
                 display: flex;
-        
+
                 .author-img {
                     position: relative;
-        
+
                     &::after {
                         content: "\f10d";
                         font-family: FontAwesome;
@@ -544,16 +482,16 @@
                         border-radius: 50%;
                     }
                 }
-        
+
                 .author-info {
                     margin-left: 25px;
-        
+
                     .author-name {
                         color: #39393a;
                         font-size: 18px;
                         font-weight: 500;
                     }
-        
+
                     .author-title {
                         color: #576477;
                         font-size: 14px;
@@ -561,7 +499,7 @@
                     }
                 }
             }
-        
+
             &::after {
                 content: "\f10d";
                 font-family: FontAwesome;
@@ -583,7 +521,7 @@
 .brand-area {
     padding: 60px 0;
 
-    .brand-swiper{
+    .brand-swiper {
         width: 100%;
     }
 }

@@ -15,6 +15,11 @@
                 font-weight: 600;
                 display: inline-block;
                 font-size: 16px;
+                transition: all 0.4s;
+
+                &:hover{
+                    color: #fb5d5d;
+                }
 
                 i {
                     color: #fb5d5d;

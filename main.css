@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html {
@@ -1574,17 +1575,16 @@ ul {
   background-color: #f9f9f9;
   padding: 20px;
 }
-.blog-area .blog-tags-share .blog-share ul i {
-  font-size: 13px;
-  color: black;
+.blog-area .blog-tags-share .blog-share a {
+  font-size: 14px;
+  color: #000;
+  transition: all 0.4s;
 }
-.blog-area .blog-tags-share .blog-share .title {
-  font-size: 13px;
-}
-.blog-area .blog-tags-share .blog-share .title a {
-  color: black;
+.blog-area .blog-tags-share .blog-share a:hover {
+  color: #fb5d5d;
 }
 .blog-area .blog-tags-share .blog-tags .title {
+  margin-right: 8px;
   font-weight: 600;
   color: #5f5f5f;
 }
@@ -1593,6 +1593,10 @@ ul {
 }
 .blog-area .blog-tags-share .blog-tags li a {
   color: #9f9e9e;
+  transition: all 0.4s;
+}
+.blog-area .blog-tags-share .blog-tags li a:hover {
+  color: #fb5d5d;
 }
 .blog-area .comment-area {
   margin-top: 50px;

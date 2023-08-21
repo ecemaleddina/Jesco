@@ -32,7 +32,33 @@ function slider() {
 }
 
 
+function mobileMenu(){
+    const mobMenu = document.querySelector('.mobile-menu');
+    const mobItems = document.querySelectorAll('.mobile-menu-opener');
+    const subOpener = document.querySelector('.sub-menu-opener');
+    const mobBtn = document.querySelector('.mobile-menu-btn');
+    const body = document.body;
+
+    subOpener.addEventListener('click', ()=>{
+        mobMenu.classList.toggle('mobile-menu-anim');
+        body.classList.toggle('overflow-hidden');
+    })
+
+    mobBtn.addEventListener('click', ()=>{
+        mobMenu.classList.remove('mobile-menu-anim');
+        body.classList.remove('overflow-hidden');
+    })
+
+    mobItems.forEach(item => {
+        item.addEventListener('click', ()=>{
+            item.firstElementChild.classList.toggle('active');
+            item.lastElementChild.classList.toggle('open-sub');
+        })
+    })
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     slider();
+    mobileMenu();
 });

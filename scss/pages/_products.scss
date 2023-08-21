@@ -195,9 +195,11 @@
         }
 
         a {
+            cursor: pointer;
             color: #3d3d3d;
             margin: 0 5px;
             font-size: 14px;
+            min-width: max-content;
             font-weight: 600;
             padding: 18px 10px;
             transition: all 0.4s;

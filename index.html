@@ -172,10 +172,11 @@
                       ><i class="fa-regular fa-heart"></i
                     ></a>
                   </li>
-                  <li>
+                  <li class="prod-count-wrap">
                     <a href="#" class="header-action-btn"
                       ><i class="fa-solid fa-bag-shopping"></i
                     ></a>
+                    <span class="prod-count">0</span>
                   </li>
                   <li>
                     <a
@@ -686,12 +687,48 @@
               class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
             >
               <p class="clock-title">#FASHION SHOP</p>
+              <h3>Deal Of The Day</h3>
+              <div class="count-down d-flex mb-2">
+                <span
+                  class="count-day px-3 d-flex flex-column align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="number me-1">139</span
+                    ><span class="dots ms-1">:</span>
+                  </div>
+                  <p>DAYS</p>
+                </span>
+                <span
+                  class="count-hour px-3 d-flex flex-column align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="number">4</span
+                    ><span class="dots ms-2">:</span>
+                  </div>
+                  <p>HOURS</p>
+                </span>
+                <span
+                  class="count-min px-3 d-flex flex-column align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="number">24</span
+                    ><span class="dots ms-2">:</span>
+                  </div>
+                  <p>MINS</p>
+                </span>
+                <span
+                  class="count-sec px-3 d-flex flex-column align-items-center"
+                >
+                  <span class="number">30</span>
+                  <p>SEC</p>
+                </span>
+              </div>
               <a href="#" class="btn shop-btn rounded-pill">
                 SHOP NOW
                 <i class="fa fa-shopping-basket"></i>
               </a>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mt-2">
               <img src="./photos/woman.webp" class="clock-img" />
             </div>
           </div>
@@ -1139,6 +1176,8 @@
 
     <a href="#top" class="scroll-up"><i class="fa-solid fa-chevron-up"></i></a>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="custom-swiper.js"></script>
     <script src="main.js"></script>

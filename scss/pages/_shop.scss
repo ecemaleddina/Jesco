@@ -275,3 +275,44 @@
         width: 170px;
     }
 }
+
+
+.clock-area {
+    padding: 100px 0 100px 0;
+
+    .container {
+        background-image: url(https://htmldemo.net/jesco/jesco/assets/images/deal-img/deal-bg.jpg);
+        height: 440px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 36px;
+            color: #464444;
+            margin-bottom: 15px;
+        }
+
+        .count-down {
+
+            .number {
+                font-size: 36px;
+                color: #303030;
+                font-weight: 700;
+            }
+
+            .dots {
+                font-size: 33px;
+                color: #303030;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 14px;
+                color: #303030;
+            }
+        }
+    }
+}

@@ -31,6 +31,26 @@
                 }
             }
         }
+
+        .prod-count-wrap{
+            position: relative;
+
+            .prod-count{
+                font-size: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 100;
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                color: #fff;
+                background-color: #fb5d5d;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+            }
+        }
     }
     
     .header-action-btn i{

@@ -103,6 +103,24 @@ ul {
 .header-container .header-actions li:hover a {
   color: #fb5d5d;
 }
+.header-container .header-actions .prod-count-wrap {
+  position: relative;
+}
+.header-container .header-actions .prod-count-wrap .prod-count {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #fff;
+  background-color: #fb5d5d;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
 .header-container .header-action-btn i {
   color: #2c2c2c;
   font-size: 13px;
@@ -1517,6 +1535,37 @@ ul {
 }
 .prod-list button {
   width: 170px;
+}
+
+.clock-area {
+  padding: 100px 0 100px 0;
+}
+.clock-area .container {
+  background-image: url(https://htmldemo.net/jesco/jesco/assets/images/deal-img/deal-bg.jpg);
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock-area .container h3 {
+  font-size: 36px;
+  color: #464444;
+  margin-bottom: 15px;
+}
+.clock-area .container .count-down .number {
+  font-size: 36px;
+  color: #303030;
+  font-weight: 700;
+}
+.clock-area .container .count-down .dots {
+  font-size: 33px;
+  color: #303030;
+  font-weight: 700;
+}
+.clock-area .container .count-down p {
+  font-size: 14px;
+  color: #303030;
 }
 
 .faq-area {

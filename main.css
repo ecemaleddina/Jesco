@@ -103,6 +103,23 @@ ul {
 .header-container .header-actions li:hover a {
   color: #fb5d5d;
 }
+.header-container .header-actions .prod-count-wrap {
+  position: relative;
+}
+.header-container .header-actions .prod-count-wrap .prod-count {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #fff;
+  background-color: #fb5d5d;
+  border-radius: 50%;
+}
 .header-container .header-action-btn i {
   color: #2c2c2c;
   font-size: 13px;

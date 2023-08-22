@@ -71,17 +71,21 @@
 
         }
 
-        .active a {
+        .active a{
             color: #fb5d5d;
         }
 
         .accordion-content {
             max-height: 0;
+            transition: all 0.6s linear;
+
+            p{
+            padding: 20px;
+            }
         }
 
         .active-accordion {
-            padding: 20px;
-            max-height: 100%;
+            max-height: 200px;
         }
     }
 }

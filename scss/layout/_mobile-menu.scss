@@ -98,13 +98,13 @@
                     }
 
                     .sub-menu {
+                        transition: all 0.6s linear;
                         margin-left: 5px;
                         max-height: 0;
                     }
-
+                    
                     .open-sub {
-                        transition: all 0.4s;
-                        max-height: 100%;
+                        max-height: 1000px;
                     }
                 }
             }
@@ -121,6 +121,10 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
+
+                &:hover{
+                    background-color: #000;
+                }
             }
         }
     }
@@ -133,16 +137,5 @@
 
 .mobile-menu-anim{
     transition: all 0.7s ease;
-    animation: anim 0.7s ease;
-
-    @keyframes anim {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-
     transform: translateX(0);
 }
